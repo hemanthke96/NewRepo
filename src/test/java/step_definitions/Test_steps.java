@@ -17,15 +17,15 @@ public class Test_steps {
 	XSSFWorkbook wb;
     XSSFSheet sh;
 
-	@Before
-	public void openBrowser() throws Exception{
-		//launching web browser....
-		System.setProperty("webdriver.chrome.driver","C:\\driver\\chromedriver.exe");
-		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		orange=new Orangehrmpagefactory(driver);
-		driver.manage().window().maximize();
-		
+		@Before
+		public void openBrowser() throws Exception{
+			//launching web browser....
+			System.setProperty("webdriver.chrome.driver","C:\\driver\\chromedriver.exe");
+			driver=new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			orange=new Orangehrmpagefactory(driver);
+			driver.manage().window().maximize();
+			
 		//using pagefactory file as reference....
 		orange=PageFactory.initElements(driver, Orangehrmpagefactory .class);
 		

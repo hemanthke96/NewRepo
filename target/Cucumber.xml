@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="14" time="209.07945">
+    <testcase classname="OrangeHrm" name="Login with blank data" time="9.167932">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user do not enter username and password................................passed
+And click on login button...................................................passed
+Then Alert username should not be empty.....................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Login with blank password" time="7.917179">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user entered username..................................................passed
+And click on login button...................................................passed
+Then Alert password should not be  empty....................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Login with blank username" time="7.460304">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user entered password..................................................passed
+And click on login button...................................................passed
+Then Alert username  should not be  empty...................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Login with invalid data" time="10.866381">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user  entered invalid  username and password...........................passed
+And click on login button...................................................passed
+Then Alert invalid credentials..............................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Login with valid  data" time="8.876954">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user entered valid username and password...............................passed
+Then navigate user to welcome page..........................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Failure in searching employee with incorrect name" time="17.335963">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to search page...........................................passed
+When user enters wrong employee name........................................passed
+And click on search button..................................................passed
+Then Display no records.....................................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Failure in searching employee with incorrect id" time="18.125077">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to search page...........................................passed
+When user enters wrong employee id..........................................passed
+And click on search button..................................................passed
+Then Display no records.....................................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Failure in searching employee with invalid data" time="18.142952">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to search page...........................................passed
+When user enters invalid employee details...................................passed
+And click on search button..................................................passed
+Then Display no records.....................................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Successful searching employee with valid data" time="17.782804">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to search page...........................................passed
+When user enters valid  employee details....................................passed
+And click on search button..................................................passed
+Then Display all records....................................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Failure in adding employee with missing first name" time="17.430621">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to  add page.............................................passed
+When user enters data without first name....................................passed
+And click on save  button...................................................passed
+Then Alert fill required fields.............................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Failure in adding employee with missing last  name" time="18.832578">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to  add page.............................................passed
+When user enters data without last  name....................................passed
+And click on save  button...................................................passed
+Then Alert fill required fields.............................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Failure in adding employee with existing id" time="18.988766">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to  add page.............................................passed
+When user enters data with existing employee id.............................passed
+And click on save  button...................................................passed
+Then Alert cannot be saved...Already employee exists........................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="successful addition of employee" time="20.147699">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigate to welcome page..........................................passed
+Then user navigate to  add page.............................................passed
+When user enters data with valid employee details...........................passed
+And click on save  button...................................................passed
+Then navigate to profile page...............................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="OrangeHrm" name="Delete employee details" time="18.00424">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters valid username and password................................passed
+And click on login button...................................................passed
+Then user navigates to welcome page.........................................passed
+Then user navigates to delete page..........................................passed
+Then user search for valid employee name....................................passed
+And click on search button..................................................passed
+Then user clicks checkbox...................................................passed
+And user click on delete button.............................................passed
+And click on ok in dialog box...............................................passed
+Then Display successfully deleted...........................................passed
+And close...................................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
