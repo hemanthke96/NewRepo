@@ -25,7 +25,7 @@ public class Test_steps {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			orange=new Orangehrmpagefactory(driver);
 			driver.manage().window().maximize();
-			
+			//added line for github
 		//using pagefactory file as reference....
 		orange=PageFactory.initElements(driver, Orangehrmpagefactory .class);
 		System.out.println("This is from GitHub");
